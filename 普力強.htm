@@ -203,6 +203,25 @@ html {
   }
 }
 
+.card__body h1{
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000,1px -1px 0 #000,-1px -1px 0 #000;
+  position: relative;
+  bottom: 2.5em;
+}
+
+.card__body h2{
+  text-shadow: 0 0 2px #000, 0 0 4px #000, 0 0 12px #000;
+  position: relative;
+  bottom: 9.5em;
+  color: white;
+}
+
+
+.card__body a{
+  text-shadow: text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+  font-size: 29px;
+}
+
 .card__image {
   position: absolute;
   z-index: -1;
@@ -512,6 +531,11 @@ html {
   align-items: flex-start
 }
 
+.menu a{
+  text-shadow: 0 0 4px #000, 0 0 8px #000, 0 0 24px #000;
+  font-weight: bold;
+}
+
 @media screen and (min-width:320px) {
   .menu {
     -ms-flex-direction: column;
@@ -689,6 +713,8 @@ html {
 .card-meta__title {
   text-transform: uppercase;
   letter-spacing: 2px;
+  position: relative;
+  top: -14em;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 19px;
@@ -817,6 +843,55 @@ html {
   }
 }
 
+.card-tags h1{
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000,1px -1px 0 #000,-1px -1px 0 #000;
+  position: absolute;
+  bottom: 3.5em;
+  padding-bottom: 25px;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.card-tags h3{
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000,1px -1px 0 #000,-1px -1px 0 #000;
+  position: absolute;
+  bottom: 3.5em;
+  padding-bottom: 25px;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.card-tags h4{
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000,1px -1px 0 #000,-1px -1px 0 #000;
+  position: absolute;
+  bottom: 3.5em;
+  padding-bottom: 5px;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.card-tags h5{
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000,1px -1px 0 #000,-1px -1px 0 #000;
+  position: absolute;
+  bottom: 1em;
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+}
+
+.card-tags a{
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000,1px -1px 0 #000,-1px -1px 0 #000;
+  position: absolute;
+  bottom: 1em;
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  text-decoration:none;
+}
+
 .card-tags__item {
   margin-top: 50px;
   margin-right: 10px;
@@ -901,11 +976,6 @@ html {
           <div class="card">
             <div class="card__header">
               <div class="header-in-card">
-                <div class="header-in-card__menu">
-                  <div class="menu">
-                    <div class="menu__icon"><span></span><span></span><span></span></div><a href="首頁.htm" target="_blank" class="menu__item" style="font-weight:bold">首頁</a><a href="" target="_blank" class="menu__item">Ecology</a><a href="http://" target="_blank" class="menu__item">Intelligence</a><a href="http://" target="_blank" class="menu__item">Mythology</a>
-                  </div>
-                </div>
                 <div class="header-in-card__share-and-like">
                   <div class="share-block">
                     <div class="share-block__share-icon"><span></span><span></span><span></span><span></span><span></span></div>
@@ -919,14 +989,12 @@ html {
               </div>
             </div>
             <div class="card__body">
-              <h1 class="card-title">Dogs</h1>
+              <h1 class="card-title">Birds</h1>
               <div class="card-meta">
-                <div class="card-meta__title">Tags</div>
-                <div class="card-meta__line"></div>
-                <div class="card-meta__quantity">22.345 images</div>
+                <br><br><br><br><br><br>
               </div>
-              <div class="card-tags"><a href="#" target="_blank" class="card-tags__item">Animals</a><a href="#" target="_blank" class="card-tags__item">Dog</a><a href="#" target="_blank" class="card-tags__item">Smiling</a><a href="#" target="_blank" class="card-tags__item">Fluffy</a><a href="#" target="_blank" class="card-tags__item">Awesome</a></div>
-            </div><img src="https://i.postimg.cc/NM5pYZ9X/dog.png" alt="" class="card__image">
+              
+            </div><img src="https://i.postimg.cc/1zRv78yJ/birds.png" alt="" class="card__image">
           </div>
         </div>
         <div class="swiper-slide">
@@ -935,7 +1003,7 @@ html {
               <div class="header-in-card">
                 <div class="header-in-card__menu">
                   <div class="menu">
-                    <div class="menu__icon"><span></span><span></span><span></span></div><a href="首頁.htm" target="_blank" class="menu__item" style="font-weight:bold">首頁</a><a href="" target="_blank" class="menu__item">Ecology</a><a href="http://" target="_blank" class="menu__item">Intelligence</a><a href="http://" target="_blank" class="menu__item">Mythology</a>
+                    <div class="menu__icon" style="color: black"><span></span><span></span><span></span></div><a href="首頁.htm" target="_blank" class="menu__item" style="font-weight:bold">首頁</a><a href="https://www.yannigo.com/baike-detail/4/18/562" target="_blank" class="menu__item" style="font-weight:bold">含有豐富的L-精胺酸食物</a><a href="https://thebetteraging.businesstoday.com.tw/article/detail/202003130017" target="_blank" class="menu__item" style="font-weight:bold">L-精胺酸功效</a>
                   </div>
                 </div>
                 <div class="header-in-card__share-and-like">
@@ -951,14 +1019,21 @@ html {
               </div>
             </div>
             <div class="card__body">
-              <h1 class="card-title">Dogs</h1>
+              <h1 class="card-title">L-精胺酸</h1>
               <div class="card-meta">
-                <div class="card-meta__title">Tags</div>
-                <div class="card-meta__line"></div>
-                <div class="card-meta__quantity">22.345 images</div>
+                <div class="card-meta__title">《素食者可食用》</div>
               </div>
-              <div class="card-tags"><a href="#" target="_blank" class="card-tags__item">Animals</a><a href="#" target="_blank" class="card-tags__item">Dog</a><a href="#" target="_blank" class="card-tags__item">Smiling</a><a href="#" target="_blank" class="card-tags__item">Fluffy</a><a href="#" target="_blank" class="card-tags__item">Awesome</a></div>
-            </div><img src="https://i.postimg.cc/NM5pYZ9X/dog.png" alt="" class="card__image">
+              <br><br><br><br>
+              <div class="card-tags">
+                <h3>L-精胺酸是什麼??</h3>
+                <a>精胺酸（Arginine）是人體必需的一種胺基酸，</br>
+                   也是常見的20種天然的胺基酸之一。精胺酸可以</br>
+                   藉由人體製造，用於合成蛋白質的胺基酸，不過</br>
+                   只有左旋精胺酸（L-Arginine）才能夠被人體</br>
+                   利用、吸收....</a>
+                   <a href="https://helloyishi.com.tw/healthy-eating/what-is-arginine/">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;More</a>
+              </div>
+            </div><img src="https://i.imgur.com/BuVF50V.png" alt="" class="card__image">
           </div>
         </div>
         <div class="swiper-slide">
@@ -967,7 +1042,7 @@ html {
               <div class="header-in-card">
                 <div class="header-in-card__menu">
                   <div class="menu">
-                    <div class="menu__icon"><span></span><span></span><span></span></div><a href="首頁.htm" target="_blank" class="menu__item" style="font-weight:bold">首頁</a><a href="" target="_blank" class="menu__item">Ecology</a><a href="http://" target="_blank" class="menu__item">Intelligence</a><a href="http://" target="_blank" class="menu__item">Mythology</a>
+                    <div class="menu__icon"><span></span><span></span><span></span></div><a href="首頁.htm" target="_blank" class="menu__item" style="font-weight:bold">首頁</a><a href="https://data.zhupiter.com/oddt/8249504/%E5%BE%AE%E7%B5%90%E6%99%B6%E7%8B%80%CE%B1-%E7%BA%96%E7%B6%AD%E7%B4%A0/" target="_blank" class="menu__item" style="font-weight:bold">微結晶纖維素來源</a><a href="https://www.healthway.tips/content/343137413342303031373434.html" target="_blank" class="menu__item" style="font-weight:bold">微結晶纖維素功效</a>
                   </div>
                 </div>
                 <div class="header-in-card__share-and-like">
@@ -983,14 +1058,19 @@ html {
               </div>
             </div>
             <div class="card__body">
-              <h1 class="card-title">Dogs</h1>
-              <div class="card-meta">
-                <div class="card-meta__title">Tags</div>
-                <div class="card-meta__line"></div>
-                <div class="card-meta__quantity">22.345 images</div>
+              <h1 class="card-title">微結晶纖維素</h1>
+              <br><br><br><br><br><br><br><br><br>
+              <div class="card-tags">
+                <h1>微結晶纖維素是什麼??</h1>
+                <a>微結晶纖維素（Microcrystalline cellulose, MCC）</br>
+                   又稱為木質粉、微晶質、纖維素等，</br>
+                   是天然纖維素經稀酸水解至極限聚合度（ LOOP）</br>
+                   的可自由流動的極細微的短棒狀或粉末狀多孔狀顆粒，</br>
+                   白色、無臭、無味，主要在口服片劑和膠囊中用作稀釋劑</br>
+                   和粘合劑....</a>
+                   <a href="https://www.easyatm.com.tw/wiki/%E5%BE%AE%E6%99%B6%E7%BA%96%E7%B6%AD%E7%B4%A0">&emsp;&emsp;&emsp;&emsp;&emsp;More</a>
               </div>
-              <div class="card-tags"><a href="#" target="_blank" class="card-tags__item">Animals</a><a href="#" target="_blank" class="card-tags__item">Dog</a><a href="#" target="_blank" class="card-tags__item">Smiling</a><a href="#" target="_blank" class="card-tags__item">Fluffy</a><a href="#" target="_blank" class="card-tags__item">Awesome</a></div>
-            </div><img src="https://i.postimg.cc/NM5pYZ9X/dog.png" alt="" class="card__image">
+            </div><img src="https://i.imgur.com/XWl0dne.jpg" alt="" class="card__image">
           </div>
         </div>
         <div class="swiper-slide">
@@ -999,7 +1079,7 @@ html {
               <div class="header-in-card">
                 <div class="header-in-card__menu">
                   <div class="menu">
-                    <div class="menu__icon"><span></span><span></span><span></span></div><a href="首頁.htm" target="_blank" class="menu__item" style="font-weight:bold">首頁</a><a href="" target="_blank" class="menu__item">Ecology</a><a href="http://" target="_blank" class="menu__item">Intelligence</a><a href="http://" target="_blank" class="menu__item">Mythology</a>
+                    <div class="menu__icon"><span></span><span></span><span></span></div><a href="首頁.htm" target="_blank" class="menu__item" style="font-weight:bold">首頁</a><a href="https://zhtw.hiloved.com/%E4%BB%80%E9%BA%BC%E6%98%AF%E6%98%8E%E8%86%A0%EF%BC%9F/" target="_blank" class="menu__item" style="font-weight:bold">含有豐富的明膠食物</a><a href="https://tw.iherb.com/blog/health-benefits-of-gelatin-healthy-gelatin-recipe/419" target="_blank" class="menu__item">明膠的健康益處</a>
                   </div>
                 </div>
                 <div class="header-in-card__share-and-like">
@@ -1015,14 +1095,56 @@ html {
               </div>
             </div>
             <div class="card__body">
-              <h1 class="card-title">Dogs</h1>
-              <div class="card-meta">
-                <div class="card-meta__title">Tags</div>
-                <div class="card-meta__line"></div>
-                <div class="card-meta__quantity">22.345 images</div>
+              <h1 class="card-title">明膠-源自膠囊</h1><br>
+              <h2> 《 滙客萊使用的明膠材料是由蔬菜的纖維素提煉而來 》</h2>
+              <br><br><br><br><br><br>
+              <div class="card-tags">
+                <h4>明膠是什麼??</h4>
+                <a>明膠是水溶性蛋白質混合物，面板、韌帶、肌腱中的膠原經酸或<br>
+                  鹼部分水解或在水中煮沸而產生，無色或微黃透明的脆片或粗粉狀，<br>
+                  在35～40℃水中溶脹形成凝膠§含水為自重5～10倍§。<br>
+                  是營養不完全蛋白質，缺乏某些必需氨基酸，尤其是色氨酸，<br>
+                  廣泛用於食品和製作黏合劑、感光底片、濾光片等....<a href="https://www.3du.tw/knowledge/ZmRoMnM=.html">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;More</a></a>
               </div>
-              <div class="card-tags"><a href="#" target="_blank" class="card-tags__item">Animals</a><a href="#" target="_blank" class="card-tags__item">Dog</a><a href="#" target="_blank" class="card-tags__item">Smiling</a><a href="#" target="_blank" class="card-tags__item">Fluffy</a><a href="#" target="_blank" class="card-tags__item">Awesome</a></div>
-            </div><img src="https://i.postimg.cc/NM5pYZ9X/dog.png" alt="" class="card__image">
+            </div><img src="https://i.imgur.com/pTwbdu7.jpg" alt="" class="card__image">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="card__header">
+              <div class="header-in-card">
+                <div class="header-in-card__menu">
+                  <div class="menu">
+                    <div class="menu__icon"><span></span><span></span><span></span></div><a href="首頁.htm" target="_blank" class="menu__item" style="font-weight:bold">首頁</a><a href="https://www.commonhealth.com.tw/article/84436" target="_blank" class="menu__item">補充維生素D防新冠</a>
+                  </div>
+                </div>
+                <div class="header-in-card__share-and-like">
+                  <div class="share-block">
+                    <div class="share-block__share-icon"><span></span><span></span><span></span><span></span><span></span></div>
+                    <div class="share-block__facebook-icon"></div>
+                    <div class="share-block__twitter-icon"></div>
+                  </div>
+                  <div class="like-block">
+                    <div class="like-block__like-icon"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__body">
+              <h1 class="card-title">維生素D</h1>
+              <h2>（英語：Vitamin D)</h2>
+              <br><br><br><br><br><br><br><br><br>
+              <div class="card-tags">
+                <h4>什麼是維生素D??</h4>
+                <a>維生素D (Vitamin D)，是人體維持基礎健康的一種脂溶性維生素，<br>
+                   更是少數人類可自行合成的維生素。可以把維生素D想像成是身體的保護罩，<br>
+                   為我們遮風擋雨、抵抗外在威脅。保護罩如果沒有每天保養，<br>
+                   小小的破洞損壞都會影響防禦力，是身體受到的危害增加，一但有敵人來襲，<br>
+                   保護罩無法發揮100%的實力，使體內的生理功能受到破壞，<br>
+                   進而引發各種健康問題....<a href="https://www.vitabox.com.tw/healthinfo/vitamind?gclid=Cj0KCQjw2MWVBhCQARIsAIjbwoNI60YPSCTJA2tVWT0htcqmOMwYJ-MasAyIO3jAj1TQ-ChQhIO31tIaAsLKEALw_wcB">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;More</a></a>
+              </div>
+              
+            </div><img src="https://i.imgur.com/fUw2A0J.jpg" alt="" class="card__image">
           </div>
         </div>
         <div class="swiper-slide">
