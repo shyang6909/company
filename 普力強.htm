@@ -214,15 +214,22 @@ div.bl-panel-items > div > div {
 }
 
 /* Custom content */
+.bl-content img{
+  display: block;
+  max-width: 100%;
+  margin: 0 20px 20px 0;
+}
+
 
 .bl-content p {
   margin: 0 auto;
   padding-bottom: 15px;
-  font-size: 1.7em;
+  font-size: 2.2em;
   line-height: 1.8;
 }
 
 .bl-content h1{
+  padding: 19px 0;
   text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
 
              0px 8px 13px rgba(0,0,0,0.1),
@@ -232,6 +239,10 @@ div.bl-panel-items > div > div {
   font-size: 1.8em;
   font-weight: bold;
   color: black;
+  background-color:#f3f6f9;border:solid;
+  border-image:linear-gradient(90deg,rgba(90,90,90,0),rgba(90,90,90,1),rgba(90,90,90,0)) 100% 0;
+  border-width:3px;
+  height:80px
 }
 
 .bl-content h2 {
@@ -264,16 +275,18 @@ div.bl-panel-items > div > div {
                0 20px 20px rgba(0,0,0,.15);
 }
 
-.bl-content h4{
-  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+h4{
+  text-shadow: 0px 3px 0px #b2a98f,
 
-             0px 8px 13px rgba(0,0,0,0.1),
+                 0px 14px 10px rgba(0,0,0,0.15),
 
-             0px 18px 23px rgba(0,0,0,0.1);
+                 0px 24px 2px rgba(0,0,0,0.1),
+
+                 0px 34px 30px rgba(0,0,0,0.1);
   text-align:center;
-  font-size: 1.8em;
-  font-weight: bold;
-  color: black;
+  font-size: 3.8em;
+  font-weight: 700;
+  color: white;
 }
 
 .bl-content h5{
@@ -288,26 +301,26 @@ div.bl-panel-items > div > div {
 }
 
 h6{
-  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-
-             0px 8px 13px rgba(0,0,0,0.1),
-
-             0px 18px 23px rgba(0,0,0,0.1);
-  font-size: 2em;
+  font-size: 2.2em;
   font-weight: bold;
   padding: -20px;
   margin-top: 1px;
   margin-bottom: 1px;
-  color: #fff;
+  color: #000;
 }
 
-p{
+h7{
+  font-family: 標楷體 ;
+  font-size: 22px;
   font-weight: bold;
+  color: #000;
 }
 
 .bl-content article {
   padding: 20px 40px 20px 0px;
 }
+
+
 
 .bl-content article h3 {
   font-weight: 700;
@@ -554,6 +567,54 @@ section.bl-expand .bl-icon-close {
     width: 40%;
   }
 }
+
+.hr-double-arrow {
+    color: #d0d0d5;
+    border: double;
+    border-width: 3px 5px;
+    border-color: #d0d0d5 transparent;
+    height: 1px;
+    overflow: visible;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+.hr-double-arrow:before, 
+.hr-double-arrow:after {
+    content: '';
+    position: absolute;
+    width: 5px; height: 5px;
+    border-width: 0 3px 3px 0;
+    border-style: double;
+    top: -3px;
+    background: radial-gradient(2px at 1px 1px, currentColor 2px, transparent 0) no-repeat;
+}
+.hr-double-arrow:before {
+    transform: rotate(-45deg);
+    left: -20px;
+}
+.hr-double-arrow:after {
+    transform: rotate(135deg);
+    right: -20px;
+}
+.hr-space-square {
+    border: 0;
+    color: #d0d0d5;
+    background: linear-gradient(currentColor, currentColor) no-repeat center;
+    background-size: calc(100% - 1.5em - 6px) 1px;
+    display: flex;
+    justify-content: space-between;
+}
+.hr-space-square::before,
+.hr-space-square::after {
+    content: '';
+    display: block;
+    width: .75em; height: .75em;
+    transform: rotate(45deg);
+    box-sizing: border-box;
+    border: 1px solid;
+    margin: 3px;
+}
 </style>
 
   <script>
@@ -589,13 +650,23 @@ section.bl-expand .bl-icon-close {
       <div id="bl-main" class="bl-main">
         <section>
           <div class="bl-box">
-            <h2 class="bl-icon bl-icon-about">About</h2>
+            <h2 class="bl-icon bl-icon-about">普力強</h2>
           </div>
           <div class="bl-content">
-            <h2>About this layout</h2>
-            <p>This responsive layout is based on an initial grid of four boxes. Once a box is clicked, it gets resized to fullscreen and the other boxes scale down and fade out. In the work section we experiment with another transition which is to show a panel by making it appear from the bottom while scaling the current one down. To see it in action, open the work section and click on one of the portfolio items and navigate through them.</p>
-            <p>
-              <a href="https://tympanus.net/Development/ResponsiveMultiLevelMenu/"><strong>&laquo; 首頁</strong></a>
+            <h2>普力強的能力在哪裡</h2>
+            <img src="https://i.imgur.com/ifGHk2B.png" />
+            <p style=" font-weight: bold;">普力強 <br>
+               普力強 (一氧化氮 NO)<font style="color:black; font-weight: bold;" > 1998年諾貝爾生理醫學獎</font><br>
+               一氧化氮的神奇功效<br>
+               血管清道夫、心腦血管的守護者<br>
+               ◆血液循環系統:<br>
+               預防心血管疾病發生如中風、血脂肪過高、心肌梗塞、高血壓、動脈硬化。<br>
+               ◆神經系統:<br>
+               幫助睡眠、提升記憶和學習、延緩老人癡呆與失智情形的產生。<br>
+               ◆免疫系統:<br>
+               預防糖尿病、可抗發炎、消腫脹、預防病毒入侵及抑制癌細胞生長。<br>
+               ◆泌尿及生殖系統:<br>
+               增進膀胱肌肉運作及勃起功能。
             </p>
           </div>
           <span class="bl-icon bl-icon-close"></span>
@@ -609,18 +680,18 @@ section.bl-expand .bl-icon-close {
             <p>Mung bean maize dandelion sea lettuce catsear bunya nuts ricebean tatsoi caulie horseradish pea.</p>
             <ul id="bl-work-items">
               <li data-panel="panel-1"><h1>L-精胺酸</h1></li>
-              <li data-panel="panel-2"><h4>微結晶纖維素</h4></li>
-              <li data-panel="panel-3"><h4>明膠-源自膠囊</h4></li>
+              <li data-panel="panel-2"><h1>微結晶纖維素</h1></li>
+              <li data-panel="panel-3"><h1>明膠-源自膠囊</h1></li>
               <li data-panel="panel-4"><h1>維生素D</h1></li>
-              <li data-panel="panel-5"><h1>維生素E<h1></li>
-              <li data-panel="panel-6"><h1>維生素B1<h1></li>
-              <li data-panel="panel-7"><h1>肉桂樹皮<h1></li>
-              <li data-panel="panel-8"><h1>輔酶Q10<h1></li>
-              <li data-panel="panel-9"><h1>葉酸<h1></li>
-              <li data-panel="panel-10"><h1>檸檬酸錳<h1></li>
-              <li data-panel="panel-11"><h1>檸檬酸鈣<h1></li>
-              <li data-panel="panel-12"><h1>二氧化矽<h1></li>
-              <li data-panel="panel-13"><h1>菸鹼醯胺<h1></li>
+              <li data-panel="panel-5"><h1>維生素E</h1></li>
+              <li data-panel="panel-6"><h1>維生素B1</h1></li>
+              <li data-panel="panel-7"><h1>肉桂樹皮</h1></li>
+              <li data-panel="panel-8"><h1>輔酶Q10</h1></li>
+              <li data-panel="panel-9"><h1>葉酸</h1></li>
+              <li data-panel="panel-10"><h1>檸檬酸錳</h1></li>
+              <li data-panel="panel-11"><h1>檸檬酸鈣</h1></li>
+              <li data-panel="panel-12"><h1>二氧化矽</h1></li>
+              <li data-panel="panel-13"><h1>菸鹼醯胺</h1></li>
             </ul>
             <h5><a href="https://dribbble.com/isaac317/click">首頁</a></h5>
           </div>
@@ -672,59 +743,155 @@ section.bl-expand .bl-icon-close {
         <!-- Panel items for the works -->
         <div class="bl-panel-items" id="bl-panel-work-items">
           <div data-panel="panel-1">
-            <div>
+            <div class="panel-1-1">
+              <h4>L-精胺酸</h4>
+              <img src="https://i.imgur.com/jhlQFG8.png" />
+
+              <h6>什麼是L-精胺酸？</h6>
+              <br>
+              <h7>精胺酸是一種胺基酸，是常見的20種天然胺基酸之一，而左旋型態的左旋精胺酸(L-Arginine)才能被人體利用。精胺酸是條件式必需胺基酸，人體能自行生產，但在壓力或疾病的時候需求量會增加，人體製造量就會不夠使用，因此在適時適量補充可以幫助維持正常生理代謝。</h7><br><br>
+
+              <h6>人每日所需多少的精胺酸？</h6>
+              <br>
+              <h7>根據世界衛生組織（WHO）建議人體每日精胺酸需求量為《117毫克/公斤》，以45-70公斤成人體重計算，每日約需求<font style="color:red;" ><b>5-8公克</b></font>，但因飲食習慣和營養攝取失衡，國人攝取的精胺酸較難達到身體需求，因此需要適時適量補充。而到底要補充多少精胺酸才夠呢？臨床研究建議的有效劑量，為2500毫克到5000毫克是較能達到體感的劑量。</h7><br><br>
+
+              <h6>L-精胺酸功效有哪些？</h6>
+              <br>
+              <h7>L-精胺酸為一種珍貴的「胺基酸補充劑」，能作為一氧化氮合成的前驅物，促進一氧化氮(NO)的生成，幫助新陳代謝，調整生理機能，增強體力，也是提升保護力不可以缺少的胺基酸。</h7><br><br>
+
+              <h6><font style="color:green;" ><b>1.蛋白質合成</b></font></h6>
+              <br>
+              <h7>左旋精胺酸為一種珍貴的「胺基酸補充劑」，能作為一氧化氮合成的前驅物，促進一氧化氮(NO)的生成，幫助新陳代謝，調整生理機能，增強體力，也是提升保護力不可以缺少的胺基酸。</h7><br><br>
+
+              <h6><font style="color:green;" ><strong>2.促進一氧化氮的合成</strong></font></h6>
+              <br>
+              <h7>左旋精胺酸可以促進一氧化氮合成，而一氧化氮在體內有許多作用：</h7><br><br>
+              <h7>◆可以協助增強體力，在關鍵時刻表現更出色。</h7><br>
+              <h7>◆促進新陳代謝，調理生理平衡，讓你不緊繃有通體舒暢的感覺。</h7><br>
+              <h7>◆提升我們的保護力。</h7><br><br>
+
+              <h6><font style="color:green;" ><b>3.L-精胺酸副作用與注意事項</b></font></h6>
+              <br>
+              <h7>1.懷孕、哺乳以及兒童及有過敏的患者，因缺乏長期補充精胺酸安全性的實驗研究因此不建議使用。</h7><br><br>
+              <h7>2.皰疹患者請暫停補充：皰疹病毒在體內複製時需要大量的精胺酸，因此會建議暫時停止使用。</h7><br><br>
+              <h7>3.肝腎疾病患者、低血壓患者及使用藥物治療或需要手術患者，有相關臨床研究在精胺酸代謝上會有狀況，因此建議詢問過醫師後再考慮補充。</h7><br><br>
+
+              <h6><font style="color:green;" ><b>4.如何挑選優質安心的L-精胺酸產品？</b></font></h6>
+              <br>
+              <h7><font style="font-size:24px; font-weight: bold;">●挑選天然發酵萃取的精胺酸</font></h7><br>
+              <h7><font style="font-size:18px;">&emsp;生物利用率好，發酵出的精胺酸品質也較高。</font></h7><br><br>
+              <h7><font style="font-size:24px; font-weight: bold;">●劑型挑選</font></h7><br>
+              <h7><font style="font-size:18px;">&emsp;如果要補充到精胺酸建議劑量2500毫克，以錠劑或是膠囊補充，一次至少要吞下5-6顆！因此會建議粉包<br>&emsp;補充簡單無負擔。</font></h7><br><br><br><br>
+          
+              <hr class="hr-double-arrow">
+              <hr class="hr-space-square">
+              <hr class="hr-double-arrow">
+
+              <h4>含有豐富的L-精胺酸食物</h4>
               <img src="https://i.imgur.com/r7TPqAR.jpg" />
-              <h3>以上是含有豐富的L-精氨酸食物</h3>
-              <h6>1.火雞：</h6>
-              <p>火雞胸肉中含有最高量的精胺酸。一份煮熟的火雞胸肉中含有16克的精胺酸，火雞不僅是蛋白質的重要優質來源，還含有其他高濃度的營養素，如維生素B群和ω-3脂肪酸。</p><br>
+              
+              <h6>1.火雞：</h6><br>
+              <h7>火雞胸肉中含有最高量的精胺酸。一份煮熟的火雞胸肉中含有16克的精胺酸，火雞不僅是蛋白質的重要優質來源，還含有其他高濃度的營養素，如維生素B群和ω-3脂肪酸。</h7><br><br>
 
-              <h6>2.豬里肌：</h6>
-              <p>豬里肌是另一種高蛋白食物，每根肋骨中的精胺酸含量為14克，僅次於火雞胸肉。它也是豬肉中最精瘦的部位之一，因此脂肪含量較低。建議可以使用醃料添加風味，不需再添加額外的脂肪。</p><br>
+              <h6>2.豬里肌：</h6><br>
+              <h7>豬里肌是另一種高蛋白食物，每根肋骨中的精胺酸含量為14克，僅次於火雞胸肉。它也是豬肉中最精瘦的部位之一，因此脂肪含量較低。建議可以使用醃料添加風味，不需再添加額外的脂肪。</h7><br><br>
 
-              <h6>3.雞胸肉：</h6>
-              <p>雞胸肉是現在相當受到大家歡迎且營養健康的蛋白質獲取方式。它同時也是攝取精胺酸的第三大最佳來源。一份雞胸肉中含有身體所需每日建議量70%的蛋白質以及將近9克的精胺酸。</p><br>
+              <h6>3.雞胸肉：</h6><br>
+              <h7>雞胸肉是現在相當受到大家歡迎且營養健康的蛋白質獲取方式。它同時也是攝取精胺酸的第三大最佳來源。一份雞胸肉中含有身體所需每日建議量70%的蛋白質以及將近9克的精胺酸。</h7><br><br>
 
-              <h6>4.花生：</h6>
-              <p>一份花生中含有4.6克的精胺酸，雖然一次吃下一整份會因為花生的脂肪含量高而導致身體負擔增加。不過你可以將這一整份的量分成四等份在一個星期內食用完。除了蛋白質含量外，花生也是維生素B3、E，葉酸和菸鹼酸的良好來源。</p><br>
+              <h6>4.花生：</h6><br>
+              <h7>一份花生中含有4.6克的精胺酸，雖然一次吃下一整份會因為花生的脂肪含量高而導致身體負擔增加。不過你可以將這一整份的量分成四等份在一個星期內食用完。除了蛋白質含量外，花生也是維生素B3、E，葉酸和菸鹼酸的良好來源。</h7><br><br>
 
-              <h6>5.大豆：</h6>
-              <p>一杯烤大豆中含有4.6克的精胺酸。大豆也是礦物質鉀和鎂的重要來源之一。可以將它們作為零食的健康替代品。</p><br>
+              <h6>5.大豆：</h6><br>
+              <h7>一杯烤大豆中含有4.6克的精胺酸。大豆也是礦物質鉀和鎂的重要來源之一。可以將它們作為零食的健康替代品。</h7><br><br>
 
-              <h6>6.南瓜籽油：</h6>
-              <p>肉類葷食並不是能唯一獲取蛋白質和精胺酸的途徑。一杯南瓜籽中富含近7克的精胺酸含量。除此之外，南瓜籽也是礦物質鐵和鋅的重要來源。</p><br>
+              <h6>6.南瓜籽油：</h6><br>
+              <h7>肉類葷食並不是能唯一獲取蛋白質和精胺酸的途徑。一杯南瓜籽中富含近7克的精胺酸含量。除此之外，南瓜籽也是礦物質鐵和鋅的重要來源。</h7><br><br>
 
-              <h6>7.扁豆：</h6>
-              <p>扁豆也是另一種富含纖維和蛋白質的健康植物來源。因此在小扁豆中也富含精胺酸，每杯扁豆中含有耶1.3克的精胺酸，除此之外，一杯扁豆還含有63％的日常膳食纖維需求量，是非常健康的營養食物。</p><br>
+              <h6>7.扁豆：</h6><br>
+              <h7>扁豆也是另一種富含纖維和蛋白質的健康植物來源。因此在小扁豆中也富含精胺酸，每杯扁豆中含有耶1.3克的精胺酸，除此之外，一杯扁豆還含有63％的日常膳食纖維需求量，是非常健康的營養食物。</h7><br><br>
 
-              <h6>8.乳製品：</h6>
-              <p>由於乳製品是蛋白質的來源，您可以從乳製品中獲取精胺酸，如牛奶、奶酪和優格。一杯牛奶含有約0.2克精胺酸，而4盎司的切達乾酪中則含有約0.25克的精胺酸。</p><br>
+              <h6>8.乳製品：</h6><br>
+              <h7>由於乳製品是蛋白質的來源，您可以從乳製品中獲取精胺酸，如牛奶、奶酪和優格。一杯牛奶含有約0.2克精胺酸，而4盎司的切達乾酪中則含有約0.25克的精胺酸。</h7><br><br>
 
-              <h6>9.鷹嘴豆：</h6>
-              <p>鷹嘴豆是獲取蛋白質和纖維的好方法，特別是針對素食飲食的族群。一份煮熟的鷹嘴豆中含有1.3克的精胺酸、14.5克蛋白質和12.5克膳食纖維。可以在咖哩裡頭加入鷹嘴豆或將鷹嘴豆磨成泥狀食用。</p><br>
+              <h6>9.鷹嘴豆：</h6><br>
+              <h7>鷹嘴豆是獲取蛋白質和纖維的好方法，特別是針對素食飲食的族群。一份煮熟的鷹嘴豆中含有1.3克的精胺酸、14.5克蛋白質和12.5克膳食纖維。可以在咖哩裡頭加入鷹嘴豆或將鷹嘴豆磨成泥狀食用。</h7><br><br>
 
-              <h6>10.螺旋藻：</h6>
-              <p>螺旋藻是一種生長在海中的藍綠藻。一份螺旋藻含有4.6克的精氨酸以及大量的鈣、鐵、鉀和菸鹼酸。</p></p>
-              <img src="images/1.jpg" />
-              <h3>L-精氨酸</h3>
-              <p>精胺酸（Arginine）是人體必需的一種胺基酸，
-                   也是常見的20種天然的胺基酸之一。精胺酸可以
-                   藉由人體製造，用於合成蛋白質的胺基酸，不過
-                   只有左旋精胺酸（L-Arginine）才能夠被人體
-                   利用、吸收....</p>
+              <h6>10.螺旋藻：</h6><br>
+              <h7>螺旋藻是一種生長在海中的藍綠藻。一份螺旋藻含有4.6克的精氨酸以及大量的鈣、鐵、鉀和菸鹼酸。</h7><br>       
             </div>
           </div>
           <div data-panel="panel-2">
             <div>
-              <img src="images/2.jpg" />
-              <h3>Chillwave mustache</h3>
-              <p>Squid vinyl scenester literally pug, hashtag tofu try-hard typewriter polaroid craft beer mlkshk cardigan photo booth PBR. Chillwave 90's gentrify american apparel carles disrupt. Pinterest semiotics single-origin coffee craft beer thundercats irony, tumblr bushwick intelligentsia pickled. Narwhal mustache godard master cleanse street art, occupy ugh selfies put a bird on it cray salvia four loko gluten-free shoreditch.</p>
+              <h4>微結晶纖維素</h4>
+              <img src="https://i.imgur.com/4Y11N1m.jpg" />
+              
+              <h6>微晶纖維素有什麼作用？</h6><br><br>
+              <h7>微晶纖維素是一種純淨的纖維素解聚產物。由天然纖維素製備，是無臭無味的結晶粉末。<br>
+                  產品在醫藥工業上可用作藥物賦形劑和藥片崩解劑；在食品工業上可作重要的功能性食品<br>
+                  基料—膳食纖維素，是一種理想的保健食品添加劑；在塗料工業上利用它的觸變性和增稠<br>
+                  性可作為水基塗料的增稠劑和乳化劑；在化妝品上它集填料、增稠和乳化作用於一身，對<br>
+                  油性物質有很好的乳化能力；在濕法製造人造革生產中作為增粘和填料使用，超細食用纖<br>
+                  維素即微晶纖維素， 簡稱MCC，是天然纖維素在酸性介質中水解使分子量降低到一定的<br>
+                  範圍成為尺寸約10μm左右的顆粒狀粉末產品。
+              </h7><br><br><br><br>
+              <h7><font style="font-size:24px; font-weight: bold;">主要用在醫藥工業作藥物賦型劑， 比用澱粉或澱粉衍生物有如下的優越性：</font></h7><br><br> 
+              <h7><font style="font-size:18px;">（1）易於崩解， 即藥物進入胃後容易崩解而為人體吸收。</font></h7><br><br>
+              <h7><font style="font-size:18px;">（2）不易發黴， 這是因為纖維素是β型葡萄糖構型而澱粉是屬於α型構型。 一般澱粉酶不攻擊纖維素。</font></h7><br><br>
+              <h7><font style="font-size:18px;">（3）纖維素不為人體所吸收對所承載的藥物又不容易起反應， 因此更為安全。 其缺點是價格偏高。</font></h7><br><br><br><br>
+              <h7><font style="font-size:24px; font-weight: bold;">微晶纖維素的另一個產品是膠體（即MCC膠）， 是以MCC粉為原料配成一定濃度的水溶液， 通過特殊的膠化裝置而成為膠體。 MCC膠體具有如下的性質：</font></h7><br><br> 
+              <h7><font style="font-size:18px;">（1）它是一種觸變性膠體， 看上去濃度很高， 黏度很大， 但是實際上只要施加外力就易於流動， 用<br>&emsp;&emsp;&ensp;勺子舀不帶尾巴。</font></h7><br><br>
+              <h7><font style="font-size:18px;">（2）其濃度在3%時膠體黏度可達3000～5000mPa·s。</font></h7><br><br>
+              <h7><font style="font-size:18px;">（3）膠體具有較好的冷、熱穩定性， 即在冷凍和加熱迴圈過程中黏度損失不大。</font></h7><br><br>
+              <h7><font style="font-size:18px;">（4）纖維素雖由葡萄糖構成，但人體卻不能消化β型葡萄糖，其發熱量為零，所以微晶纖維素在人體內只<br>&emsp;&emsp;&ensp;隨食物一起移動而不為人體所吸收，它可以幫助消化達到減少或預防消化系統疾病的目的。</font></h7><br><br>
+              <h7><font style="font-size:28px; color:#000;">*&emsp;醫藥工業：藥物賦型劑（粉體），膠囊（粉體， 直接服用）。</font></h7><br><br>
+              <h7><font style="font-size:28px; color:#000;">*&emsp;食品工業：低熱量霜淇淋（代替部分奶脂肪）， 沙拉醬（代替<br>&emsp;&ensp;部分奶脂肪）， 富纖維麵包（粉體）。</font></h7><br><br>
+              <h7><font style="font-size:28px; color:#000;">*&emsp;化妝品：基本原料（保濕， 護膚）。</font></h7><br><br>
+
             </div>
           </div>
           <div data-panel="panel-3">
             <div>
-              <img src="images/3.jpg" />
-              <h3>Austin hella</h3>
-              <p>Ethical cray wayfarers leggings vice, seitan banksy small batch ethnic master cleanse. Pug chillwave etsy, scenester meh occupy blue bottle tousled blog tonx pinterest selvage mixtape swag cosby sweater. Synth tousled direct trade, hella Austin craft beer ugh chambray.</p>
+              <h4>明膠-源自膠囊</h4>
+
+              <img src="https://i.imgur.com/iXHGD9n.jpg" />
+              <h6>明膠是什麼？</h6><br>
+              <h6><font style="color:green; font-size: 24px;" ><strong>&emsp;&emsp;&emsp;&emsp;(滙客萊使用的明膠材料是來自植物：由蔬菜的纖維素提煉而來)</strong></font></h6><br><br>
+              <h7>1.明膠的成分幾乎全為蛋白質，具有獨特的氨基酸譜，所以對健康有許多益處。明膠中含<br>
+                  &emsp;量最豐富的氨基酸是甘氨酸、脯氨酸、纈氨酸、羥脯氨酸和谷氨酸。
+              </h7><br><br><br><br>
+              <h7>2.人體會製造一些氨基酸，但我們需要通過飲食獲取其餘的氨基酸。而由於我們通常不會<br>
+                  &emsp;吃含有膠原的關節、肌腱和結締組織，補充明膠可能是將這些必需氨基酸納入飲食的一<br>
+                  &emsp;個好方法。明膠的成分幾乎全為蛋白質，具有獨特的氨基酸譜，所以對健康有許多益處<br>
+                  &emsp;。明膠中含量最豐富的氨基酸是甘氨酸、脯氨酸、纈氨酸、羥脯氨酸和谷氨酸。
+              </h7><br><br><br><br>
+              <h6><font style="color:green;" ><strong>明膠對健康有些什麼益處？</strong></font></h6><br><br>
+              <h7>1.改善睡眠：明膠是甘氨酸（氨基酸）含量最豐富的食物來源，有證據顯示在睡前服用可<br>
+              &emsp;改善睡眠質量。</h7><br><br>
+              <h7>2.改善皮膚：有證據顯示明膠可以增加皮膚中的水分和膠原蛋白含量。</h7><br><br>
+              <h7>3.頭髮變厚：多項研究顯示，明膠補充劑可增加發量和和發絲厚度。</h7><br><br>
+              <h7>4.改善骨骼和關節健康：以明膠治療骨關節炎方面的證據仍不足，但最近的研究顯示，與<br>
+              &emsp;安慰劑相比，以明膠治療者的關節疼痛有顯著減輕。</h7><br><br>
+              <h7>5.預防受傷：在間歇性運動計劃中使用明膠，可促進膠原蛋白的合成，或可有助於預防受<br>
+              &emsp;傷和修復組織。</h7><br><br>
+              <h7>6.促進大腦健康：明膠中的大量甘氨酸或可改善記憶力和注意力。</h7><br><br>
+              <h7>7.促進腸道健康：明膠中的谷氨酸可幫助修復並保護腸道壁免受損害，有助於防止“腸<br>
+              &emsp;漏”；如患腸漏，潛在有害物質可通過腸道進入血液。</h7><br><br><br><br>
+              <hr class="hr-double-arrow">
+              <hr class="hr-space-square">
+              <hr class="hr-double-arrow">
+              <h4>明膠的來源</h4>
+              <h6>1.植物性明膠：</h6><br>
+              <h7>植物性膠囊的主原料，學名稱為『羥丙基甲基纖維素』(Hydroxypropyl Methylcellulose) ，簡稱為 HPMC，由松木或棉花的纖維素提煉而來。</h7><br><br>
+
+              <h6>2.動物性明膠：</h6><br>
+              <h7>明膠是胜肽與膠原蛋白質部分水解的混合物，膠原蛋白通常自牛、豬和魚的皮、骨骼、結締組織中提取</h7><br><br><br><br>
+              <h6 font style="color:white; font-size: 1.8em; font-weight: bold;" >要如何分辨動物性膠囊或植物性膠囊</h6><br><br>
+              <h7>可利用熱水浸泡結果來判斷,動物明膠囊會被熱水溶化成不規則膠狀物，於熱水<br>
+                （ 80 ℃ ）中持續攪拌，10 分鐘內會溶解。植物性膠囊吸水後會膨潤，顏色由<br>
+                 透明轉變成白霧狀不透明，冷卻至室溫（ 25 ℃ ），持續攪拌，約 15 分鐘後<br>
+                 會崩解成透明的細碎片。</h7><br><br>
+
             </div>
           </div>
           <div data-panel="panel-4">
