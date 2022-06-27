@@ -229,18 +229,19 @@ div.bl-panel-items > div > div {
 }
 
 .bl-content h1{
-  padding: 19px 0;
-  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-
-             0px 8px 13px rgba(0,0,0,0.1),
-
-             0px 18px 23px rgba(0,0,0,0.1);
+  padding: 22px 0;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000,
+  2px 2px 2px black;
   text-align:center;
   font-size: 1.8em;
   font-weight: bold;
-  color: black;
-  background-color:#f3f6f9;border:solid;
-  border-image:linear-gradient(90deg,rgba(90,90,90,0),rgba(90,90,90,1),rgba(90,90,90,0)) 100% 0;
+  color: white;
+  background-color:#FA987D;
+  border:solid;
   border-width:3px;
   height:80px
 }
@@ -494,6 +495,24 @@ div.bl-panel-items > div.bl-hide-current-work {
   -ms-transform: translateY(-100%) scale(0.5);
   z-index: 0;
 }
+.frame { 
+  align:center ; 
+  height: 560px; /*can be anything*/
+  width: 720px; /*can be anything*/
+  position: relative;
+}
+
+.frame-1 {  
+  height: 240px; /*can be anything*/
+  width: 480px; /*can be anything*/
+  position: relative;
+}
+
+.frame-2 {  
+  height: 240px; /*can be anything*/
+  width: 320px; /*can be anything*/
+  position: relative;
+}
 
 .panel-1-1 img{
   position: relative;
@@ -516,7 +535,16 @@ div.bl-panel-items > div.bl-hide-current-work {
   width: 100%;
 }
 .panel-7-1 img{
-  width: 100%;
+  max-height: 100%;  
+  max-width: 100%; 
+  width: auto;
+  height: auto;
+  position: absolute;  
+  top: 0;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  margin: auto;
 }
 .panel-8-1 img{
   width: 100%;
@@ -717,7 +745,7 @@ section.bl-expand .bl-icon-close {
   <body>
     <div class="container"> 
       <div id="bl-main" class="bl-main">
-        <section>
+        <section id="bl-work-section">
           <div class="bl-box">
             <h2 class="bl-icon bl-icon-about">普力強</h2>
           </div>
@@ -744,7 +772,6 @@ section.bl-expand .bl-icon-close {
           </div>
           <div class="bl-content">
             <h2>成分介紹</h2>
-            <p>Mung bean maize dandelion sea lettuce catsear bunya nuts ricebean tatsoi caulie horseradish pea.</p>
             <ul id="bl-work-items">
               <li data-panel="panel-1"><h1>L-精胺酸</h1></li>
               <li data-panel="panel-2"><h1>微結晶纖維素</h1></li>
@@ -760,7 +787,6 @@ section.bl-expand .bl-icon-close {
               <li data-panel="panel-12"><h1>二氧化矽</h1></li>
               <li data-panel="panel-13"><h1>菸鹼醯胺</h1></li>
             </ul>
-            <h5><a href="https://dribbble.com/isaac317/click">首頁</a></h5>
           </div>
           <span class="bl-icon bl-icon-close"></span>
         </section>
@@ -856,7 +882,7 @@ section.bl-expand .bl-icon-close {
             <h8 style="font-size:24px;" ><br>效用：男性性功能、性功能障强、免疫功能、心腦血管疾病</h8><br><br>
             <h8 style="font-size:24px;" ><br>左旋瓜氨酸L-Citrulline是一種氨基酸，是精氨酸L-Arginine的前體·名字是由首先抽取出瓜氨酸的西瓜而來，有助於身體保持精氨酸健康水平，瓜氨酸在癒合過程和維持一個健康的免疫系統中起著重要作用，瓜氨酸可在人疆内與氨作用，生成精氨酸和一氧化氮(NO)，一氧化氮會導致平滑肌舒張瓜氨酸可以使人的血管獲得鬆弛，用於增強男性性功能以及治獠性功能障礙；1992年科學家證實男人的性機能與一氧化氮(NO)有密切的關連，一氧化氮(NO)可以鬆驰陰莖海綿體，如此血液就可以流入海绵體微血管，呈“充血狀態“而使陰莖勃起，瓜氨酸雄護建康的肺功能，提高腦力清晰度，有幫助腦神經細胞具貯藏與傳遞訊息的功能部份研究指出高血壓前期(prehypertension)可藉由L-瓜氨酸降低血壓；兒童經歷心臟手術後的高血服也可以使用此種營養補充品加以降低。</h8><br><br>
             <h8 style="font-size:24px;" ><br>西瓜中含有大量的瓜氨酸，藥理學家認為這種天然氨基酸具有與“威而剛"（化學名稱"Sildena"枸櫞酸西地那非）類似的藥理作用，而且絕無副作用，西瓜測還能夠替代“威而剛"的作用。不過，要吃下3個西瓜才能達到服用一粒"威而剛"的效力。</h8><br><br><br><br>
-            <h8><br>瓜氨酸主要功效：</h8><br><br>
+            <h8><br>L-瓜氨酸主要功效：</h8><br><br>
             <h8 style="font-size:24px;" ><br>1.提高免疫系統功能。<br>
                                              2.維護關節運動的機能。<br>
                                              3.平衡正常的血糖水準。<br>
@@ -906,12 +932,12 @@ section.bl-expand .bl-icon-close {
               <h8 style="font-size:24px;" ><br>2.皰疹患者請暫停補充：皰疹病毒在體內複製時需要大量的精胺酸，因此會建議暫時停止使用。</h8><br><br>
               <h8 style="font-size:24px;" ><br>3.肝腎疾病患者、低血壓患者及使用藥物治療或需要手術患者，有相關臨床研究在精胺酸代謝上會有狀況，因此建議詢問過醫師後再考慮補充。</h8><br><br>
 
-              <h8><br><font style="color:green;" ><b>4.如何挑選優質安心的L-精胺酸產品？</b></font></h8>
+              <h8><br>如何挑選優質安心的L-精胺酸產品？</h8>
               <br>
               <h8 style="font-size:24px;" ><br><font style="font-size:24px; font-weight: bold;">●挑選天然發酵萃取的精胺酸</font></h8><br>
-              <h8 style="font-size:24px;" ><br><font style="font-size:24px;">&emsp;生物利用率好，發酵出的精胺酸品質也較高。</font></h8><br><br>
+              <h8 style="font-size:24px;" ><br><font style="font-size:24px;">生物利用率好，發酵出的精胺酸品質也較高。</font></h8><br><br>
               <h8 style="font-size:24px;" ><br><font style="font-size:24px; font-weight: bold;">●劑型挑選</font></h8><br>
-              <h8 style="font-size:24px;" ><br><font style="font-size:24px;">&emsp;如果要補充到精胺酸建議劑量2500毫克，以錠劑或是膠囊補充，一次至少要吞下5-6顆！因此會建議粉包補充簡單無負擔。</font></h8><br><br><br><br>
+              <h8 style="font-size:24px;" ><br><font style="font-size:24px;">如果要補充到精胺酸建議劑量2500毫克，以錠劑或是膠囊補充，一次至少要吞下5-6顆！因此會建議粉包補充簡單無負擔。</font></h8><br><br><br><br>
           
               <hr class="hr-double-arrow">
               <hr class="hr-space-square">
@@ -983,7 +1009,6 @@ section.bl-expand .bl-icon-close {
           <div data-panel="panel-3">
             <div class="panel-3-1">
               <h4>明膠-源自膠囊</h4>
-
               <img src="https://i.imgur.com/iXHGD9n.jpg" />
               <h8><br>明膠是什麼？</h8><br>
               <h8><br><font style="color:green; font-size: 26px;" ><strong>(滙客萊使用的明膠材料是來自植物：由蔬菜的纖維素提煉而來)</strong></font></h8><br><br>
@@ -1015,72 +1040,217 @@ section.bl-expand .bl-icon-close {
           </div>
           <div data-panel="panel-4">
             <div class="panel-4-1">
-              <img src="images/4.jpg" />
-              <h3>Brooklyn dreamcatcher</h3>
-              <p>Fashion axe 90's pug fap. Blog wayfarers brooklyn dreamcatcher, bicycle rights retro YOLO. Wes anderson lomo 90's food truck 3 wolf moon, twee jean shorts. Iphone small batch twee wolf yr before they sold out. Brooklyn echo park cred, portland pug selvage flannel seitan tousled mcsweeney's.</p>
+              <h4>維生素D</h4>
+              <img src="https://i.imgur.com/Cgd22O7.jpg" />
+              <h8><br>維生素D是什麼</h8><br>
+              <h8 style="font-size:24px;" ><br>維生素D(維生素D)是脂溶性維他命之一，為一種親脂性類固醇衍生物，搭配油脂比較容易吸收。維生素D又稱為陽光營養素，主要因皮膚接觸特定波長且足夠時間的紫外光就能觸發維他命合成，除了靠曬太陽接受紫外線產生以外，食物也可以提供維生素D來源，通常植物來源的是維生素D2(Ergocalciferol，麥角鈣化醇)，動物來源是維生素D3(Cholecalciferol，膽鈣化醇)，不管哪一種來源都須在體內再做轉化才具有功能性。
+              </h8><br><br><br><br>
+              <h8><br>維生素D的5大功效</h8><br>
+              <h8 style="font-size:24px;" ><br>近幾年與維生素D相關的臨床功效研究倍增許多，其功效遍及由裡而外，從小孩到老年人保養，由早期對於骨骼的保健，到近期對於保護力的研究更是廣泛。整理以下維生素D幾個主要功效給你參考：
+              </h8><br><br>
+              <h8 style="font-size:24px;" ><br>1.可以增進鈣吸收。</h8>
+              <h8 style="font-size:24px;" ><br>2.幫助骨骼與牙齒的生長發育。</h8>
+              <h8 style="font-size:24px;" ><br>3.促進釋放骨鈣，以維持血鈣平衡。</h8>
+              <h8 style="font-size:24px;" ><br>4.有助於維持神經、肌肉的正常生理。</h8>
+              <h8 style="font-size:24px;" ><br>5.提升保護力、調節生理機能。</h8><br><br><br><br>
+              <h8><br>《如何補充維生素D》</h8><br>
+              <h8 style="font-size:24px;" ><br>維生素D是國人攝取狀況最差的營養素，根據2013-2016年國民營養調查報告顯示，國人維生素D 攝取量及血液中維生素D的濃度都不到標準，不足的比例極高！
+              </h8><br><br>
+              <h8 style="font-size:24px;" ><br>台灣人怕日曬，大多會擦防曬乳、撐傘加防曬衣，肌膚能接受到紫外光的機會大為減低，維生素D合成量就會受限。而含有維生素D的食物多為動物內臟，在補充上也須注意膽固醇攝取過量的問題，因此選擇維生素D補充品就會變得較為安全又速效的方式，此外維生素D含量就是補充的關鍵。
+              </h8><br><br><br><br>
+              <h8><br>《維生素D的正確吃法》</h8><br>
+              <h8 style="font-size:24px;" ><br>台灣國人膳食營養素參考建議量(DRIs)建議成人可攝取維生素D量依照年齡層有所不同，上限攝取量(UL)每日不超過2000IU為基準。以現在臺灣規定能作為膠囊錠劑的維生素D建議量需每日低於800IU，以目前國人維生素D營養狀況是最為安全最佳的補充量。維生素D必非補越多身體就會越好，畢竟維生素D脂溶性維他命，多吃也會產生中毒風險。如有特殊需求者，會建議檢驗血液中維生素D的濃度，再與醫生討論是否要加量保養。
+              </h8><br><br><br><br>
+              <h8><br>維生素D建議攝取量：</h8><br>
+              <h8 style="font-size:24px;" ><br>1-50歲：400IU (5微克)</h8>
+              <h8 style="font-size:24px;" ><br>51歲以上：600IU (10微克)</h8>
+              <h8 style="font-size:24px;" ><br>孕哺乳婦女：+400IU(5微克)</h8>
+              <h8 style="font-size:24px;" ><br>上限攝取量：2000IU(50微克)</h8><br><br><br><br>
+              <h8><br>《補充過量的維生素D有副作用嗎？》</h8><br>
+              <h8 style="font-size:24px;" ><br>研究發現如果長期使用超量的維生素D，會增加高血鈣、高尿鈣等症狀。如有肝腎功能不佳者，建議與醫師討論如何補充維生素D會比較安全有效。而對一般民眾而言，補充維生素D都是十分安全的，且要持續補充，累積體內陽光營養素。</h8><br>              
             </div>
           </div>
           <div data-panel="panel-5">
            <div class="panel-5-1">
-              <img src="images/2.jpg" />
-              <h3>Chillwave mustache</h3>
-              <p>5555555555555555555555555555555555555</p>
+            <h4>維生素E</h4>
+              <img src="https://cdn.helloyishi.com.tw/wp-content/uploads/2019/02/vitamin-e-ed.jpg" />
+              <h8><br>維生素Ｅ的功效和副作用有哪些？如何正確補充？</h8><br><br>
+              <h8 style="font-size:24px;" ><br>維生素E ，又稱為維生素E ，和維生素A 、維生素D 以及維生素K 都屬於脂溶性維生素。維生素E 也常和維他命C 這個好兄弟湊成一組，可以說是抗氧化與抗老界的萬年不敗明星，只要是跟抗老有關的補充品，如果有放維他命的話，那麼配方裡面八成會有維他命C 與維生素E 這兩個基本營養素。維生素E 是脂溶性抗氧化劑，維他命C 則負責擔任水溶性抗氧化劑，它們和其他的抗氧化劑與抗氧化酵素一起對抗自由基，維持體內氧化還原的平衡。
+              </h8><br><br>
+              <h8 style="font-size:24px;" ><br>當飲食攝取不足，或是體內氧化情形增加時，體內的抗氧化劑就沒有辦法好好的維持這個平衡，各種慢性疾病或是生理老化的問題，就可能隨之而生。也因此具有抗氧化力的維生素E 補充的需求，在這樣的理論下，就被創造出來了。網路上有關維生素E 的功效以及副作用的討論很多，但到底哪些是真，哪些是假？在這篇文章裡， MedPartner 團隊的醫師和營養師將聯手為您介紹什麼是維生素E 、它在體內如何發揮作用、自由基又是什麼，並從實證的角度看維生素E 的健康功效為何，以及近年關於維生素E 的新觀點。
+              </h8><br><br>
+              <h8><br>要講述維生素E之前，先做個重點整理：</h8><br>
+              <h8 style="font-size:24px;" ><br>1.維生素E是 8 種類似分子的總稱，主要發揮生理活性的是 α-生育醇。</h8>
+              <h8 style="font-size:24px;" ><br>2.維生素E的主要生理功能是抗氧化劑，保護細胞不受自由基傷害。</h8>
+              <h8 style="font-size:24px;" ><br>3.維生素E的運送與代謝主要由肝臟負責，過多的維生素E會被肝臟代謝掉。</h8>
+              <h8 style="font-size:24px;" ><br>4.適當的攝取植物油、堅果類就能達到維生素E的每日足夠攝取量。</h8>
+              <h8 style="font-size:24px;" ><br>5.補充過多維生素E並沒有顯著預防心血管疾病的效果。</h8><br><br><br><br>
+              <h4 style="font-size:52px; font-weight: bold;">《維生素E是什麼》</h4><br>
+              <img src="https://www.medpartner.club/wp-content/uploads/2018/06/%E7%B6%AD%E7%94%9F%E7%B4%A0E_%E7%B0%A1%E4%BB%8B.png" />
+              <h8><br>《維生素E的五大功效》</h8><br>
+              <h8 style="font-size:24px;" ><br><h8 style="color: green;" >1.抗氧化</h8><br>維生素E具有強大的抗氧化力，有助防止自由基造成的細胞損傷。另外，《維生素、礦物質功效速查圖典》一書也指出，適量補充天然維生素E，能夠阻斷致癌物質「亞硝酸鹽」，有助抑制腫瘤。</h8><br><br>
+              <h8 style="font-size:24px;" ><br><h8 style="color: green;" >2.免疫</h8><br>對於免疫系統來說，維生素E也是不可或缺的成分。《你不可不知的增強免疫力100招》指出，除了正常的免疫功能，維生素E對於T淋巴細胞的功能也特別重要，45歲以上的中老年人除健康飲食外，再補充維生素E，能明顯提高免疫力。</h8><br><br>
+              <h8 style="font-size:24px;" ><br><h8 style="color: green;" >3.抗凝血</h8><br>維生素E具有預防血小板凝固、附著於血管壁的效果。《維生素、礦物質功效速查圖典》一書也指出，維生素E能夠擴張血管、防止血液凝固、保護血管內皮細胞，對血管健康有益。</h8><br><br>
+              <h8 style="font-size:24px;" ><br><h8 style="color: green;" >4.抗老</h8><br>在美容保健方面，維生素E具有延緩身體器官與肌膚老化、改善掉髮、滋潤皮膚的效果，對於手術後或外傷患者的傷口癒合、防止留疤也有幫助。老年人適度補充維生素E，除了增強免疫力外，也有助預防大腦、身體器官衰退。</h8><br><br>
+               <h8 style="font-size:24px;" ><br><h8 style="color: green;" >5.生育能力</h8><br>維生素E也被稱為生育醇，能夠防止黃體素氧化、維護卵巢健康，因此可能有不孕、習慣性流產的女性可適量補充。</h8><br><br><br><br>
             </div>
           </div>
           <div data-panel="panel-6">
             <div class="panel-6-1">
-              <img src="images/2.jpg" />
-              <h3>Chillwave mustache</h3>
-              <p>66666666666666666666666666666ia four loko gluten-free shoreditch.</p>
+              <h4>維生素B1</h4>
+              <img src="https://cdn.helloyishi.com.tw/wp-content/uploads/1970/01/%E7%A1%AB%E8%83%BA%E7%B4%A0%E7%BC%BA%E4%B9%8F%E7%97%87%E7%B6%AD%E4%BB%96%E5%91%BDB1%E6%94%9D%E5%8F%96%E5%85%85%E8%B6%B3%E5%97%8E%EF%BC%9F.jpg" />
+              <h8><br>什麼是維生素B1？</h8><br><br>
+              <h8 style="font-size:24px;" ><br>維生素B1也稱維他命B1，也有依據功能稱為：抗神經炎素或抗神經炎維生素，或根據化學名稱稱為硫胺素。維生素B群中第一個被發現的維生素，本身是一種水溶性維生素，也是人體中必需的13種維生素之一。維生素B1在人體中無法自行合成，必須要透過食物中來攝取。
+              </h8><br><br>
+              <h8 style="font-size:24px;" ><br>維生素B1溶於水中，在酸性溶液中相對穩定，但在中性或鹼性溶液中穩定性不佳，高溫也會對破壞維生素B1的結構。
+              </h8><br><br>
+              <h8><br>維生素B1對人體的重要性</h8><br>
+              <h8 style="font-size:24px; font-weight: bold;" ><br>維生素B基本生理功能如下：</h8><br><br>
+              <h8 style="font-size:24px;" ><br>1.參與醣類、脂肪、蛋白質的代謝，熱量轉換中擔任重要的輔酶，協助反應完成。</h8>
+              <h8 style="font-size:24px;" ><br>2.維持肌肉協調和神經傳導地需要，與合成神經傳導物質有關。</h8>
+              <h8 style="font-size:24px;" ><br>3.維持體內水分的平衡，將體內多餘的水分排出。</h8>
+              <h8 style="font-size:24px;" ><br>4.有效降低肌肉中乳酸的累積量，避免出現肌肉疼痛、無力、疲勞等症狀。</h8>
+              <h8 style="font-size:24px;" ><br>5.協助將葡萄糖轉化成五碳糖（pentose）有關，五碳糖是核甘酸（DNA）合成所需要的碳架。</h8>
+              <h8 style="font-size:24px;" ><br>6.保護黏膜健康，如果維生素B1缺乏症，黏膜容易破損。</h8>
+              <h8 style="font-size:24px;" ><br>7.腦部運動功能維持正常協助穩定情緒。</h8><br><br><br><br>
+              <h8><br>《維生素B1如何被人體吸收與代謝？》</h8><br>
+              <h8 style="font-size:24px;" ><br>人體無法自行製造維生素B1，只能從食物攝取。維生素B1主要由小腸前段吸收，過多就會隨著尿液排出體外。</h8>
+              <h8 style="font-size:24px;" ><br>飲食中如果搭配補充礦物質—錳、維生素B群、維生素C、維生素E，可提高維生素B1的吸收利用。</h8><br><br><br><br>
+              <h8><br>《建議維生素B1的每日攝取量：》</h8><br><br>
+              <h8 style="font-size:24px; font-weight: bold;" ><br>維生素B1每日的攝取量通常是0.5mg∕1000kcal為宜。不同國家有不同的建議量（以成人為例）：</h8><br>
+              <h8 style="font-size:24px;" ><br>1.台灣：男約0.8－1.5mg，女0.7－1.1mg。</h8>
+              <h8 style="font-size:24px;" ><br>2.美國：成人約1.0–1.5 mg，婦女妊娠和哺乳期1.5–1.6 mg。</h8><br><br><br><br>
+              <h8><br>《吃什麼可以補充維生素B1？》</h8><br><br>
+              <h8 style="font-size:24px;" ><br>1.全榖類：糙米、米糠、全麥麵包、小麥、穀物胚芽、燕麥、麥麩。在穀物中，維生素B1多存在於外殼（外胚層）。</h8>
+              <h8 style="font-size:24px;" ><br>2.綠色蔬菜類：青江菜、綠花椰菜、甘藍菜芽。</h8>
+              <h8 style="font-size:24px;" ><br>3.五穀雜糧類：堅果類、芝麻、花生、葵瓜子、開心果、莢豆、黃豆、豌豆、大豆及其製品。</h8>
+              <h8 style="font-size:24px;" ><br>4.其他：動物肝臟、瘦豬肉、酵母、奶粉、魚卵、蛋黃、菇蕈類、鳳梨、黑色葡萄、酪梨、山藥。</h8><br><br><br><br>
+              <h8><br>《維生素B1攝取不當會發生哪些問題？》</h8><br><br>
+              <h8 style="font-size:24px; font-weight: bold;" ><br>維生素B1為水溶性，過多的部份都可透過尿液排出人體，因此除非刻意大量攝取，否則不容易出現過量的情況。一般而言，維生素B1之問題大多是攝取不足所引起，缺乏最有名的疾病是腳氣病：</h8><br>
+              <h8 style="font-size:24px;" ><br>1.神經相關問題，例如：周邊神經麻痺等。</h8>
+              <h8 style="font-size:24px;" ><br>2.心臟相關問題，會出現心律不整、心肺擴大。</h8>
+              <h8 style="font-size:24px;" ><br>3.食欲不振、厭食、消化不良、便秘。</h8>
+              <h8 style="font-size:24px;" ><br>4.疲倦、健忘、記憶力衰退、注意力不集中、情緒暴躁、焦慮、憂鬱。</h8>
+              <h8 style="font-size:24px;" ><br>5.病人肌肉容易受傷，會有出現橫紋肌溶解症的風險。</h8>
+              <h8 style="font-size:24px;" ><br>6.長期缺乏嚴重，者甚至會死亡。</h8><br>
+              <h8 style="font-size:24px; font-weight: bold;" ><br>如果有長期過量食用之問題，每日超過5–10g，可能引起頭痛、發抖、過敏、心跳加快、焦躁易怒、過敏、失眠等副作用。</h8><br><br>
+              <h8><br>《維生素B1注意事項》</h8><br><br>
+              <h8 style="font-size:24px;" ><br>1.維生素B1多存在於外胚層，因此愈精緻的白米維生素B1相對愈少。</h8>
+              <h8 style="font-size:24px;" ><br>2.維生素B1很容易在加熱及加工過程中被破壞。</h8>
+              <h8 style="font-size:24px;" ><br>3.長期愛吃生魚片易導致維生素B1缺乏。</h8>
+              <h8 style="font-size:24px;" ><br>4.維生素B1怕鹼，因此服用制酸劑會流失飲食攝入的維生素B1。</h8>
+              <h8 style="font-size:24px;" ><br>5.妊娠、哺乳或服用避孕藥的女性，需要大量的維生素B1。</h8><br><br>
             </div>
           </div>
           <div data-panel="panel-7">
             <div class="panel-7-1">
-              <img src="images/2.jpg" />
-              <h3>Chillwave mustache</h3>
-              <p>7777777777777777777777777777777777777-free shoreditch.</p>
+              <h4>肉桂樹皮</h4>
+              <img src="" />
+              <h8><br>肉桂是什麼樹的樹皮，它是一種什麼樣的植物？</h8><br><br>
+              <h8 style="font-size:24px;" ><br>一，肉桂是什麼樹的樹皮</h8><br>
+              <h8 style="font-size:24px;" ><br>在植物名稱中帶有「桂」字的植物比較多，如肉桂、月桂、毛桂、大葉桂、天竺桂、香桂、川桂、桂花、四季桂等等，<font style="color:red;" ><b>但藥食兩用的肉桂是樟科樟屬肉桂組植物肉桂的樹皮，不是其他帶有「桂」字植物的樹皮。</b></font>
+              </h8><br><br>
+              <img src="" />
+              <h8 style="font-size:24px;" ><br>在植物分類學中樟屬分為兩個組，即樟組和肉桂組，在我國肉桂組有28種植物；肉桂與其他同組植物的區別是：一是為栽培植物；二是在結果時花被片宿存；三是葉互生或近對生，葉片長圓形或披針形，葉下面和花序有黃色短絨毛，離基三出脈中脈和側脈在上面凹下；四是枝、葉、樹皮在干時有濃烈的肉桂香氣。</h8>
+              <h8 style="font-size:24px;" ><br>現在國際市場上流通的肉桂主要是我國的肉桂和錫蘭肉桂（C.zeylanicum）,錫蘭肉桂主要產自斯里蘭卡。</h8><br><br><br><br>
+              <h8 style="font-size:24px;" ><br>二，肉桂是一種怎樣的植物</h8><br><br>
+              <h8 style="font-size:24px;" ><br><h8 style="color: green;" >（一）肉桂的植物學特點</h8><br><br>
+              <h8 style="font-size:24px;" ><br>1，名稱和分類地位</h8><br>
+              <h8 style="font-size:24px;" ><br>肉桂是正式中名，這個名稱來源於《唐本草》，在《中國植物志》中確定為正式中名；學名為Cinnamomum cassia Presl.，是在1825年正式命名發表的；別名在《南方草本狀》和《廣東高要》中記載為桂；在廣東叫玉桂、肉桂、桂枝、桂皮等；在廣西叫；在植物分類學中屬於樟科樟屬肉桂組植物。</h8><br><br>
+              <h8 style="font-size:24px;" ><br>2，分布和生長環境</h8>
+              <h8 style="font-size:24px;" ><br>肉桂原產我國，在廣東、廣西、海南、福建、台灣、湖南、江西、浙江、雲南等省區的熱帶和亞熱帶地區廣泛栽培，以廣西栽培最多；肉桂喜歡溫暖濕潤氣候，要求年平均氣溫大於20°C，極短高溫在39°C以下，極短低溫在-5°C以上，年降雨量在1200毫米以上，適宜生長在花崗岩、砂頁岩、礫岩等風化發育的土層深厚、疏鬆、濕潤肥沃、排水良好的微酸性土壤上。</h8><br><br>
+              <h8 style="font-size:24px;" ><br>3，外形特點</h8>
+              <h8 style="font-size:24px;" ><br>一、是為栽培的常綠喬木，樹皮灰褐色，老樹皮厚達13毫米，一年生枝條黑褐色，表面稍有短毛。</h8><br><br>
+              <div class="frame">
+                <img src="http://i2.kknews.cc/aBDKRKN42VnVzTtmHfYnA3t7w2VHQQtjBw/0.jpg" width="80%" hight="80%" /><br><br>
+              </div>
+              <h8 style="font-size:24px;" ><br>二、是單葉互生或近對生，葉片長圓形或披針形，長8-34公分，革質，邊緣軟，內卷，表面綠色，光亮無毛，背面淺綠色，有稀疏黃色短絨毛，離基三出脈，葉脈在上面凹下，在下面凸起；</h8><br><br>
+              <div class="frame-2">
+                <img src="http://i2.kknews.cc/A2kO4Iz__nindogF15m-mFi6r6nI3i2ZEw/0.jpg" /><br><br>
+              </div>
+              <h8 style="font-size:24px;" ><br>葉柄粗壯，長1-2公分，有黃色短絨毛。</h8><br><br> 
+              <div class="frame-1">
+                <img src="http://i2.kknews.cc/Wpuyaw5mcnSh7xTSeOcmOA7i_xIgECdrRw/0.jpg" />
+              </div>
+              <h8 style="font-size:24px;" ><br>三、是圓錐花序腋生或近頂生，長8-16公分，花序軸有黃色絨毛，花白色，花被筒倒錐形，能育雄蕊9個，6-8月開花；</h8><br><br> 
+              <div class="frame-1">
+                <img src="http://i1.kknews.cc/FpxPW9zs0unfcoE_ttPh0i3xV-fjmHW_aQ/0.jpg" width="80%" hight="80%" /><br><br> 
+              </div>
+              <h8 style="font-size:24px;" ><br>果實橢圓形，長1公分左右，成熟時黑紫色，無毛，果托淺杯狀，邊緣平截或有齒裂，10-12月果實成熟。</h8><br><br>
+              <div class="frame-1">
+                <img src="http://i2.kknews.cc/WaB_6bqhZ49cDc1tb7fKXKjNX6ZEaiP_rQ/0.jpg" /><br><br><br><br> 
+              </div>
+              <h8 style="font-size:24px;" ><br><h8 style="color: green;" >（二）肉桂的主要用途</h8><br><br>
+              <h8 style="font-size:24px;" ><br>1，名稱和分類地位</h8><br>
+              <h8 style="font-size:24px;" ><br>第一，作香料用。肉桂的樹皮口感辛辣濃香，帶有一絲絲甜味，是常用的香料之一，燉肉炒菜都能使食物變得好吃起來；肉桂也是「五香粉」、「十三香」的重要組成部分。</h8><br><br>
+              <div class="frame">
+                <img src="http://i2.kknews.cc/hODC0UTJQSO2ByR7ddsVLwdxL1xCvCAO3A/0.jpg" /><br><br><br><br>
+              </div>
+              <h8 style="font-size:24px;" ><br>第二，藥用。肉桂的樹皮可以製成多種藥用產品，如桂通、油桂、企邊桂、捲筒桂等，是傳統的珍貴中藥，其味辛、甘，性大熱，具有補火助陽、引火歸元、散寒止痛、溫通經脈功效；主要含有肉桂醛等揮發揮發性成分和多糖類、二萜、多酚、黃酮等非揮發性成分。藥用時請遵醫囑。</h8><br><br>
+              <div class="frame-1">
+                <img src="http://i2.kknews.cc/EFnu2pqnVxT-A-U4K-AAyBlhneG-LDoGhQ/0.jpg" /><br><br>
+              </div>
+              <h8 style="font-size:24px;" ><br>第三，剝皮後的剩餘物用途：肉桂剝皮後產生大量剩餘物即桂木木材，由於其含有肉桂醛等揮發性芳香成分，也具有多種藥用功效，如行血祛風、散寒止痛、活血通經等；也可以開發成肉桂木涼蓆、肉桂養生枕等產品。肉桂木糠也是生產食用菌的菌材。</h8><br><br><br><br>
             </div>
           </div>
           <div data-panel="panel-8">
             <div class="panel-8-1">
+              <h4>輔酶Q10</h4>
               <img src="images/2.jpg" />
-              <h3>Chillwave mustache</h3>
-              <p>7777777777777777777777777777777777777-free shoreditch.</p>
+              <h8><br>一、Q10 是什麼？製造人體能量的小小功臣！
+              </h8><br><br>
+              <h8 style="font-size:24px;" ><br>維生素B1溶於水中，在酸性溶液中相對穩定，但在中性或鹼性溶液中穩定性不佳，高溫也會對破壞維生素B1的結構。
+              </h8><br><br>
             </div>
           </div>
           <div data-panel="panel-9">
             <div class="panel-9-1">
+              <h4>葉酸</h4>
               <img src="images/2.jpg" />
-              <h3>Chillwave mustache</h3>
-              <p>7777777777777777777777777777777777777-free shoreditch.</p>
+              <h8 style="font-size:24px;" ><br>維生素B1也稱維他命B1，也有依據功能稱為：抗神經炎素或抗神經炎維生素，或根據化學名稱稱為硫胺素。維生素B群中第一個被發現的維生素，本身是一種水溶性維生素，也是人體中必需的13種維生素之一。維生素B1在人體中無法自行合成，必須要透過食物中來攝取。
+              </h8><br><br>
+              <h8 style="font-size:24px;" ><br>維生素B1溶於水中，在酸性溶液中相對穩定，但在中性或鹼性溶液中穩定性不佳，高溫也會對破壞維生素B1的結構。
+              </h8><br><br>
             </div>
           </div>
           <div data-panel="panel-10">
             <div class="panel-10-1">
+              <h4>檸檬酸錳</h4>
               <img src="images/2.jpg" />
-              <h3>Chillwave mustache</h3>
-              <p>7777777777777777777777777777777777777-free shoreditch.</p>
+              <h8 style="font-size:24px;" ><br>維生素B1也稱維他命B1，也有依據功能稱為：抗神經炎素或抗神經炎維生素，或根據化學名稱稱為硫胺素。維生素B群中第一個被發現的維生素，本身是一種水溶性維生素，也是人體中必需的13種維生素之一。維生素B1在人體中無法自行合成，必須要透過食物中來攝取。
+              </h8><br><br>
+              <h8 style="font-size:24px;" ><br>維生素B1溶於水中，在酸性溶液中相對穩定，但在中性或鹼性溶液中穩定性不佳，高溫也會對破壞維生素B1的結構。
+              </h8><br><br>
             </div>
           </div>
           <div data-panel="panel-11">
             <div class="panel-11-1">
+              <h4>檸檬酸鈣</h4>
               <img src="images/2.jpg" />
-              <h3>Chillwave mustache</h3>
-              <p>7777777777777777777777777777777777777-free shoreditch.</p>
+              <h8 style="font-size:24px;" ><br>維生素B1也稱維他命B1，也有依據功能稱為：抗神經炎素或抗神經炎維生素，或根據化學名稱稱為硫胺素。維生素B群中第一個被發現的維生素，本身是一種水溶性維生素，也是人體中必需的13種維生素之一。維生素B1在人體中無法自行合成，必須要透過食物中來攝取。
+              </h8><br><br>
+              <h8 style="font-size:24px;" ><br>維生素B1溶於水中，在酸性溶液中相對穩定，但在中性或鹼性溶液中穩定性不佳，高溫也會對破壞維生素B1的結構。
+              </h8><br><br>
             </div>
           </div>
           <div data-panel="panel-12">
             <div class="panel-12-1">
+              <h4>二氧化矽</h4>
               <img src="images/2.jpg" />
-              <h3>Chillwave mustache</h3>
-              <p>7777777777777777777777777777777777777-free shoreditch.</p>
+              <h8 style="font-size:24px;" ><br>維生素B1也稱維他命B1，也有依據功能稱為：抗神經炎素或抗神經炎維生素，或根據化學名稱稱為硫胺素。維生素B群中第一個被發現的維生素，本身是一種水溶性維生素，也是人體中必需的13種維生素之一。維生素B1在人體中無法自行合成，必須要透過食物中來攝取。
+              </h8><br><br>
+              <h8 style="font-size:24px;" ><br>維生素B1溶於水中，在酸性溶液中相對穩定，但在中性或鹼性溶液中穩定性不佳，高溫也會對破壞維生素B1的結構。
+              </h8><br><br>
             </div>
           </div>
           <div data-panel="panel-13">
             <div class="panel-13-1">
+              <h4>菸鹼醯胺</h4>
               <img src="images/2.jpg" />
-              <h3>Chillwave mustache</h3>
-              <p>8888888888888888888888888888888888888888888888888888ay salvia four loko gluten-free shoreditch.</p>
+              <h8 style="font-size:24px;" ><br>維生素B1也稱維他命B1，也有依據功能稱為：抗神經炎素或抗神經炎維生素，或根據化學名稱稱為硫胺素。維生素B群中第一個被發現的維生素，本身是一種水溶性維生素，也是人體中必需的13種維生素之一。維生素B1在人體中無法自行合成，必須要透過食物中來攝取。
+              </h8><br><br>
+              <h8 style="font-size:24px;" ><br>維生素B1溶於水中，在酸性溶液中相對穩定，但在中性或鹼性溶液中穩定性不佳，高溫也會對破壞維生素B1的結構。
+              </h8><br><br>
             </div>
           </div>
           <nav>
